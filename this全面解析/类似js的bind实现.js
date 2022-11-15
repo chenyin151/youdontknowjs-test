@@ -18,6 +18,7 @@ function main() {
             // 这里的this指向是Foo,因为调用Foo.bind1这个函数，this指向就是Foo
             fNOP.prototype = this.prototype;
             fBound.prototype = new fNOP();
+            debugger
             return fBound;
         }
     }
